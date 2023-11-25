@@ -348,6 +348,7 @@ margin-bottom: -35px;
 
   .shape {
     border: 15px solid var(--primary-color);
+    max-width: 800px;
 
   }
   .shape1 {
