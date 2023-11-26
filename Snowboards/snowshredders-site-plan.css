@@ -361,3 +361,14 @@ margin-bottom: -35px;
     max-width: 450px;
   }
   
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+
+
+    $to = "larsonaidan8@gmail.com";
+    $subject = "New Form Submission";
+    $message = "Name: $name\nEmail: $email\n";
+
+
+    mail($to, $subject, $message);
