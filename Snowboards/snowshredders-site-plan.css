@@ -282,8 +282,7 @@ margin-bottom: -35px;
   max-height: 450px;
   border-radius: 30px;
   border: 15spx; */
-  border: 15px solid var(--secondary-color);
-  ;
+  border: 15px solid var(--accent1-color)  ;
   ;
   /* padding: 50px; */
   /* margin: 20px; */
@@ -293,6 +292,9 @@ margin-bottom: -35px;
   .I1 {
     border: 15px solid var(--accent1-color);
   }
+.ChairI11 {
+  margin-bottom: 3em;
+}
   .I11 {
     border: 15px solid var(--secondary-color);
     margin-top: -2em;
@@ -360,15 +362,10 @@ margin-bottom: -35px;
     border: 15px solid var(--primary-color);
     max-width: 450px;
   }
-  
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
 
-
-    $to = "larsonaidan8@gmail.com";
-    $subject = "New Form Submission";
-    $message = "Name: $name\nEmail: $email\n";
-
-
-    mail($to, $subject, $message);
+  .personal {
+    margin-bottom: 2em;
+  }
+  .gen {
+    margin-top: -3em;
+  }
