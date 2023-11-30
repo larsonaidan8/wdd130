@@ -31,18 +31,45 @@
                 and conditions of snowboards.
                 </p>
             <!-- <div class="images"> -->
-            <div id="hero">
+            <!-- <div id="hero">
                 <div id="hero-box">
             <img class="I1" src="Snowboarder-picture.jpeg" alt="Snowboarder image">
-</div>
-        <!-- </div> -->
+</div> -->
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Snowboarder-picture.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.jpg" style="width:100%">
+      </div>
+    
+  </div>
+
+
+
+
+
+        <!-- </div>
         <section id="hero-msg">
             <h1 class="home-title">
-<!-- Blah Blah Blah -->
+Blah Blah Blah
 <a href="snowshredders-models.html">Buy</a>
             </h1>
                 </section>
-             </div>
+             </div> -->
 <p>
    Snow Shredders stands out as the premier snowboard manufacturer for a myriad of reasons that collectively set us apart as the industry's best. Our commitment to innovation is unrivaled, with cutting-edge designs and materials that elevate the snowboarding experience to new heights. We take pride in the meticulous craftsmanship of each board, ensuring top-tier quality that meets the demands of both novice riders and seasoned professionals. At Snow Shredders, we prioritize performance and durability, using advanced engineering techniques to create boards that effortlessly glide through all types of snow conditions. Additionally, our dedication to sustainability is evident in our eco-friendly manufacturing processes and materials, showcasing a responsible approach to preserving the winter playground we all cherish. Our customer-centric philosophy ensures that every rider receives not just a snowboard but a tailored experience, reflecting our passion for the sport and a commitment to fostering a community of enthusiastic snowboarders. Choose Snow Shredders for an unparalleled blend of innovation, quality, and environmental consciousness in every ride.
           </p>
@@ -64,7 +91,7 @@
       </nav> -->
 <footer>
       <div class="media">
-      <p class="text">SnowShredders&copy; 20XX - Aidan Larson</p>
+      <p class="texted">SnowShredders&copy; 20XX - Aidan Larson</p>
       <p class="text1"><a href="snowshredders-site-plan.html">Site Plan</a></p>
       <p class="connect"><a href="index.html">Contact Us</a></p>
       <div class="social">
@@ -80,6 +107,52 @@
       </div>
       </div>
       </footer>
+      <script>
+//         let slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1} 
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none"; 
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block"; 
+//   dots[slideIndex-1].className += " active";
+// }
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+      </script>
 </body>
 </html>
 
