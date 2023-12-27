@@ -1,0 +1,42 @@
+body {
+    Background-color: rgb(193, 214, 238)
+
+}
+
+.header {
+    background-color: rgb(175, 225, 240);
+    padding: 50px;
+    border: 3px solid black;
+}
+
+h1 {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    word-spacing: 10px;;
+    font-size: 60px
+}
+
+h3 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.audio {
+    margin-left: 40px;
+}
+
+.lyrics {
+    font-family: cursive;
+    margin-left: 40px;
+}
+
+.lyrics1 {
+    padding: 5px;
+
+}
+
+.lyrics8 {
+    font-weight: bold;;
+}

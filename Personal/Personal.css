@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr 1fr 1fr 1fr;
     background-color: rgb(169, 169, 211);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
@@ -11,19 +11,7 @@ body {
 
 
 
-h1 {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    background-color: rgb(169, 169, 211);
-    padding: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 0.1em;
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    text-align: center;
-    /* border: 2px solid rgb(70, 39, 90); */
-    word-spacing: 0.7em;
-}
+
 h3 {
     grid-column: 1/4;
     grid-row: 2/3;
@@ -31,14 +19,59 @@ h3 {
     letter-spacing: 0.2em;
     word-spacing: 0.5em;
     background-color: rgb(169, 169, 211);
-    margin-top: -9em;
+    /* margin-top: -9em; */
 }
 p {
     grid-column:2/3;
     grid-row: 2/3;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: -8em;
+    /* margin-top: -8em; */
     line-height: 25px;
     max-width: 85ch;
-    /* text-align: center; */
+    text-align: center;
+}
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  nav  {
+    list-style-type: none;
+    display: flex;
+  
+  }
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+  
+  }
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: black;
+    background-color: grey;
+  }
+  .top-nav {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: rgb(62, 62, 122);
+    z-index:0;
+  }
+  h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.2em;
+    color: rgb(44, 34, 85);
+    font-size: 50px;
+    text-align: center;
+    margin-top:175px;
+    border: 5px solid grey;
+    background-color: grey;
+    word-spacing: 0.6em;
+    z-index: 1;
 }
